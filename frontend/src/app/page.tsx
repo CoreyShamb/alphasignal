@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16 grid w-full gap-6 md:grid-cols-3">
-          <Card>
+          <Card className="border-slate-800 bg-slate-900 text-white">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold">Market Intelligence</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -42,7 +42,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="border-slate-800 bg-slate-900 text-white">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold">AI Analysis</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -51,8 +51,8 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardContent className="p-6">
+          <Card className="border-slate-800 bg-slate-900 text-white">
+            <CardContent className="p-8">
               <h3 className="text-xl font-semibold">Company Research</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Review company news, goals, financials, and future plans.
@@ -98,6 +98,71 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <section className="mx-auto mt-32 max-w-7xl px-6">
+          <div className="text-center">
+            <p className="text-sm font-medium text-green-400">
+              Why AlphaSignal?
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold">
+              Everything Investors Need in One Platform
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-3xl text-slate-400">
+              AlphaSignal combines market intelligence, company research,
+              AI-powered analysis, financial news, watchlists, and investor
+              education into a single platform designed to help investors
+              make smarter decisions.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
+
+            <Card className="border-slate-800 bg-slate-900 text-white">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold">
+                  AI-Powered Analysis
+                </h3>
+
+                <p className="mt-4 text-slate-400">
+                  Analyze stocks using AI-generated insights, sentiment
+                  analysis, risk scoring, and market signals to identify
+                  potential opportunities.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-slate-800 bg-slate-900 text-white">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold">
+                  Company Intelligence
+                </h3>
+
+                <p className="mt-4 text-slate-400">
+                  Research company leadership, financial performance,
+                  earnings reports, future goals, strategic initiatives,
+                  and market positioning.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-slate-800 bg-slate-900 text-white">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold">
+                  Investor Education
+                </h3>
+
+                <p className="mt-4 text-slate-400">
+                  Learn investing from beginner to advanced levels with
+                  guided lessons, market concepts, research techniques,
+                  and investment strategies.
+                </p>
+              </CardContent>
+            </Card>
+
+          </div>
+        </section>
       </section>
     </main>
   );
